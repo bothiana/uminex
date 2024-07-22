@@ -41,13 +41,17 @@ header .top-header {
   padding-block: 12px;
   border: 1px solid var(--brdr-color);
 }
-header .top-header .container {
+header .top-header .container  {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header .top-header .container a {
   color: #fff;
   font-size: 15px;
+}
+header .offer a{
+  display: flex;
 }
 
 /* & descond */
@@ -146,13 +150,14 @@ nav .sale i {
   font-size: 20px;
 }
 /* & main section */
-.main-section .container {
+ .main-section .container {
   display: grid;
   grid-template-areas:
     "iphone ipad"
     "iphone ipadgame";
-  padding-block: 40px;
+  padding-block: 30px;
   gap: 5px;
+  row-gap: 0;
 }
 
 .phone {
@@ -163,7 +168,7 @@ nav .sale i {
 }
 .game-pad {
   grid-area: ipadgame;
-}
+}  
 
 /* & electronic section */
 
@@ -178,13 +183,13 @@ nav .sale i {
   background-color: #e2e6eb;
   width: 120px;
   height: 120px;
-
+  border: none;
+  outline: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition: 300ms border, outline;
+  transition: 0.5s border, outline;
 }
 
 .electronic .image:hover {
@@ -224,27 +229,28 @@ section.product {
   padding-block: 40px;
 }
 
-.product .left-side {
+.left-side {
   display: flex;
+  align-items: center;
 }
-.product .left-side i {
+.left-side i {
   font-size: 20px;
   color: var(--second-color);
   margin-right: 10px;
 }
-.product .left-side span {
+.left-side span {
   color: var(--second-color);
   font-size: 16px;
   font-weight: 700;
 }
 
-.product .title {
+.title {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   padding-block: 15px;
   border-radius: 7px;
-  padding-inline: 8px;
+  padding-inline: 20px;
 }
 
 .product .count-box {
@@ -260,7 +266,7 @@ section.product {
   border-radius: 2px;
 }
 .products {
-  margin-top: 10px;
+  margin-top: 7px;
   display: flex;
   gap: 5px;
 }
@@ -277,58 +283,59 @@ section.product {
 .products .image-box img {
   width: 100%;
   transition: 0.5s transform;
-  height: 420px;
   position: relative;
 }
-.product .icons{
+.product .icons {
   width: fit-content;
   position: absolute;
   right: 15px;
   top: 40px;
   opacity: 0;
-  transition: .5s opacity;
-
+  transition: 0.5s opacity;
+  transition: 0.5s top;
 }
-.product .offer{
+.products .product:hover .icons {
+  opacity: 1;
+  top: 30px;
+}
+.product .offer {
   background-color: #dd3842;
   padding: 5px 10px;
-  color :#fff;
+  color: #fff;
   position: absolute;
-  top: 0;
-  left: 35px;
+  top: 8px;
+  left: 32px;
   font-size: 12px;
 }
-.product .icons .icon{
+.product .icons .icon {
   background-color: #fff;
   border: 1px solid var(--brdr-color);
-  width:30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 8px;
   border-radius: 50%;
-  display: flex ;
+  display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s  background-color;
+  transition: 0.5s background-color;
 }
-.products .product:hover .icons{
+.products .product:hover .icons {
   opacity: 1;
+  top: 30px;
 }
-.product .icons .icon:hover{
+.product .icons .icon:hover {
   background-color: #2b38d1;
 }
 
-.product .icons .icon:hover i{
+.product .icons .icon:hover i {
   color: #fff;
-
 }
 
-.product .icons .icon i{
+.product .icons .icon i {
   color: #515d66;
   font-size: 12px;
-  transition: .5s  color;
-
+  transition: 0.5s color;
 }
-
 
 .products .product {
   background-color: white;
@@ -337,11 +344,11 @@ section.product {
   padding-inline: 5px;
   overflow: hidden;
   position: relative;
-
+  height: 360px;
 }
 
 .products .product img {
-  width: 100%;
+max-width: 100%;
 }
 
 .products .product a {
@@ -349,6 +356,7 @@ section.product {
   transition: 0.5s color;
   font-size: 12px;
   font-weight: 700;
+  padding-block: 10px;
 }
 
 .products .product a:hover {
@@ -361,14 +369,14 @@ section.product {
 .products .content {
   background-color: #fff;
   position: relative;
-  top: 20px;
+  top: -19px;
   z-index: 99;
   transition: 0.5s top;
+  padding-inline: 10px;
 }
 
-
 .products .product:hover .content {
-  top: -80px;
+  top: -65px;
 }
 
 .products .status-bar {
@@ -392,7 +400,7 @@ section.product {
   font-size: 15px;
 }
 .product h6 {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--link);
   margin-block: 8px;
 }
@@ -405,7 +413,7 @@ section.product {
 .product span .value {
   color: #000;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 13px;
 }
 .product .btn {
   text-align: center;
@@ -413,22 +421,79 @@ section.product {
 
 .product button {
   background-color: #2b38d1;
-  padding: 10px 18px;
+  padding: 10px 25px;
   border: none;
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 18px;
   text-transform: capitalize;
+  margin-top: 10px;
 }
 
 .product .price {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 12px;
 }
 .product .price del {
   color: #515d66;
 }
 .product .price h6 {
   color: #dd3842;
+}
+/* &feature product section */
+.feature-product {
+  background-color: #f1f5f6;
+  padding-block: 30px;
+}
+
+.feature-product .title h3 {
+  font-size: 16px;
+}
+
+.feature-product .title a {
+  color: black;
+  font-size: 14px;
+}
+
+.feature-product .title i {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.feature-product .product {
+  height: 363px;
+}
+
+.feature-product .product .unavailable,
+.feature-product .product .unavailable i {
+  color: #dd3842;
+  font-size: 13px;
+}
+
+.feature-product .product button.unavailable {
+  background-color: var(--second-color);
+  color: #fff;
+}
+.feature-product .product button.available {
+  background-color: var(--link);
+  color: #fff;
+}
+.feature-product .product .available,
+.feature-product .product .available i {
+  color: #008a00;
+  font-size: 13px;
+} */
+/* &fixed image section */
+/* .fixed-img{
+  background-color: #008a00;
+  margin-bottom: 20px;
+} */
+
+/* .fixed-img .image{
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  background-image: url(../image/img_1_4.png);
 }
