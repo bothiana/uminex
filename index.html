@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UmINEX</title>
+    <title>Uminex</title>
     <!-- ^ font awsome -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- ^google fonts  -->
@@ -13,6 +13,8 @@
     />
     <!-- ^ css style -->
     <link rel="stylesheet" href="./css/style.css" />
+  <!-- ^ media css -->
+     <!-- <link rel="stylesheet" href="./css/media.css"> -->
   </head>
   <body>
     <!-- ^##############  header -->
@@ -28,7 +30,7 @@
               >
             </a>
           </div>
-          <div class="offer">
+          <div class="offer header-offer">
             <a href="#">
               <i class="fa-solid fa-bolt"></i>
               <span>
@@ -36,7 +38,7 @@
               >
             </a>
           </div>
-          <div class="offer">
+          <div class="offer header-offer">
             <a href="#">
               <i class="fa-solid fa-bolt"></i>
               <span>
@@ -47,7 +49,7 @@
         </div>
       </div>
       <!-- * descond -->
-       <div class="descond">
+      <div class="descond">
         <div class="container">
           <div class="text">
             <p>You are a student and students get 20% discount.</p>
@@ -72,6 +74,9 @@
       <!-- *middel header -->
       <div class="m-header">
         <div class="container">
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="image">
             <img
               width="150"
@@ -79,7 +84,54 @@
               alt="logo"
             />
           </div>
+          <div class="input">
+            <select >
+              <option value="">All categories</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+            <input type="text" placeholder="search for products ...">
+            <button>search</button>
+          </div>
+          <div class="header-control">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                  <div class="caption">
+                    <span>login</span>
+                    <h6>Account</h6>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>0</span>
+                  </div>
+                </a>
+              </li>
+              <li class="shopping">
+                <a href="#">
+                  <div class="heart">
+                    <i class="fa-solid fa-cart-shopping"></i> <span>0</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <span> your cart </span>
+                <h6>$0.00</h6>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="input another-input">
+        <input type="text" placeholder="search for products ...">
+        <button>search</button>
       </div>
       <!-- *navbar -->
       <nav>
@@ -237,17 +289,17 @@
         <div class="container">
           <div class="title">
             <div class="left-side">
-              <i class="fa-regular fa-clock"></i>
-              <p><span>HOT DEALS!</span>GET OUR BEST PRICES</p>
+              <p>              <i class="fa-regular fa-clock"></i>
+                <span>HOT DEALS! </span>GET OUR BEST PRICES</p>
             </div>
             <div class="right-side">
-              <div class="count-box">
                 <p>Hurry up! Offer ends in:</p>
-                <div class="count">00</div>
-                <div class="count">08</div>
-                <div class="count">19</div>
-                <div class="count">05</div>
-              </div>
+                 <div class="counts">
+                  <div class="count">00</div>
+                  <div class="count">08</div>
+                  <div class="count">19</div>
+                  <div class="count">05</div>
+                 </div>
             </div>
           </div>
           <div class="products">
@@ -297,7 +349,7 @@
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product phone-product">
               <div class="image">
                 <img src="./image/products_13_1.jpg" alt="laptop" />
               </div>
@@ -434,9 +486,9 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <!-- ^################ feature product section -->
-     <section class="feature-product">
+      <section class="feature-product">
         <div class="container">
           <div class="title">
             <div class="left-side">
@@ -653,8 +705,696 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <!-- ^################ fixedimage section -->
+      <section class="fixed-image">
+        <div class="container">
+          <div class="image">
+            <h3>APLLY CARD TODAY AND <span>GET DISCOUND</span></h3>
+            <p>
+              In rewards on your first day of purchase when you are approved for
+              the card.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ^################ phone types section -->
+      <section class="phone-types">
+        <div class="container">
+          <div class="title">
+            <div class="left-side">
+              <h3>TOP SELLING PRODUCTS</h3>
+            </div>
+            <div class="right-side">
+              <a href="#" class="active"> all products </a>
+              <a href="#">smart phone</a>
+              <a href="#">ipad</a>
+            </div>
+          </div>
+
+          <div class="cards-box">
+            <div class="card">
+              <div class="image">
+                <img
+                  src="./image/products_35_1.jpg"
+                  alt="samsunge galaxy s20"
+                />
+              </div>
+              <div class="caption">
+                <a href="#">Samsung Galaxy S20 FE 8GB/256GB Blue</a>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <span class="price">$499.00</span>
+                <span class="check">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="icons">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img
+                  src="./image/products_11_1.jpg"
+                  alt="samsunge galaxy s20"
+                />
+              </div>
+              <div class="caption">
+                <a href="#">Samsung Galaxy S21 FE 8GB/256GB Blue</a>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <span class="price">$230.00</span>
+                <span class="price2">$430.00</span>
+                <span class="check">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="icons">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+                <span class="offer"> -31% </span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img
+                  src="./image/products_9_1.jpg"
+                  alt="appel iphone 12promax "
+                />
+              </div>
+              <div class="caption">
+                <a href="#">Apple iPhone 12 Mini 128GB Pink– Unlocked</a>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <span class="price">$120.00</span>
+                <span class="check unavailable">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="icons">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <img src="./image/products_34_1.jpg" alt="iphone 13promax " />
+              </div>
+              <div class="caption">
+                <a href="#">Apple iPhone 13 Pro Max 128GB - Unlocked</a>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <span class="price">$0.00</span>
+                <span class="check unavailable">
+                  <i class="fa-solid fa-check"></i>
+                  out of stock
+                </span>
+                <div class="icons">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./image/products_10_1.jpg" alt="galaxy z " />
+              </div>
+              <div class="caption">
+                <a href="#">Galaxy Z Fold 3 5G 256GB - Blue Phantom</a>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <span class="price">$45.00</span>
+                <span class="check">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="icons">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./image/products_8_1.jpg" alt="galaxy s22 z " />
+              </div>
+              <div class="caption">
+                <a href="#">Samsung Galaxy S22 Plus 5G 8GB/128GB</a>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <span class="price">$120.00</span>
+                <span class="check">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="icons">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ^################ items section -->
+      <section class="item-section">
+        <div class="container">
+          <div class="items">
+            <div class="item">
+              <div class="img-box">
+                <img src="./image/img_1_5_540x.jpg" alt="gamepad" />
+                <div class="item-content">
+                  <span>Gamepad</span>
+                  <h3><span>Save 20%</span>Product</h3>
+                  <p>Free Shipping 20km Radius</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-box">
+                <img src="./image/img_1_6_540x.jpg" alt="camera" />
+                <div class="item-content">
+                  <span>Camera</span>
+                  <h4>Quality 2K Ultra</h4>
+                  <p>Save 20% on today</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-box">
+                <img src="./image/img_1_7_540x.jpg" alt="laptop" />
+                <div class="item-content">
+                  <span>Save 20%</span>
+                  <h3><span>Tablet Pro</span>2022</h3>
+                  <p>Top Quality products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ^################ recommented priduct section -->
+      <section class="recommended-product">
+        <div class="container">
+          <div class="title">
+            <div class="left-side">
+              <h3>RECOMMENDED FOR YOU</h3>
+            </div>
+            <div class="right-side">
+              <a href="#">
+                View All Products
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="image">
+                <img src="./image/products_35_1.jpg" alt="samsaung galaxy 20" />
+              </div>
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <div class="content">
+                <a href="#">Samsung Galaxy S20 FE 8GB/256GB Blue</a>
+
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <h6>$499.00</h6>
+
+                <span class="available">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="btn">
+                  <button>add to card</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image">
+                <img src="./image/products_34_1.jpg" alt="iphone" />
+              </div>
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <div class="content">
+                <a href="#">Apple iPhone 13 Mini 128GB Pink– Unlocked</a>
+
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <h6>$0.00</h6>
+
+                <span class="unavailable">
+                  <i class="fa-solid fa-check"></i>
+                  out of stock
+                </span>
+                <div class="btn">
+                  <button>out of stock</button>
+                </div>
+              </div>
+            </div>
+            <div class="product special-product">
+              <div class="image">
+                <img src="./image/products_11_1.jpg" alt="galaxy s21" />
+              </div>
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <div class="content">
+                <a href="#">Samsung Galaxy S21 FE 8GB/128GB</a>
+
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <h6>$230.00-</h6>
+                <h6>$430.00</h6>
+
+                <span class="available">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="btn">
+                  <button>Select option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image">
+                <img src="./image/products_10_1.jpg" alt="galaxy z" />
+              </div>
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <div class="content">
+                <a href="#">Galaxy Z Fold 3 5G 256GB - Blue Phantom</a>
+
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <h6>$45.00</h6>
+
+                <span class="unavailable">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="btn">
+                  <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image">
+                <img src="./image/products_9_1.jpg" alt="iphone" />
+              </div>
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+              <div class="content">
+                <a href="#">Apple iPhone 12 Pro Max 128GB - Unlocked</a>
+
+                <div class="review">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <span>2 review</span>
+                </div>
+                <h6>$120.00</h6>
+
+                <span class="unavailable">
+                  <i class="fa-solid fa-check"></i>
+                  in stock
+                </span>
+                <div class="btn">
+                  <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ^################ technology section -->
+      <section class="technology-section">
+        <div class="container">
+          <div class="technologies">
+            <div class="technology">
+              <div class="img-box">
+                <img
+                  src="./image/10_cc1abdba-a10a-4889-8b57-88133851a0ba_360x.png"
+                  alt="smartphone"
+                />
+              </div>
+              <div class="content">
+                <span><a href="#">TECHNOLOGY</a></span>
+                <h4>
+                  <a href="#">The Smartphone Has Just Launched in Sep 2022</a>
+                </h4>
+                <h6>Post by ALO Support</h6>
+                <p>
+                  iPad Pro is the fastest device of its kind. It’s designed to
+                  take full advantage...
+                </p>
+                <div class="brdr"></div>
+                <footer>
+                  <a href="#">READ MORE</a>
+                  <span>MAR, 03 2023</span>
+                </footer>
+              </div>
+            </div>
+            <div class="technology">
+              <div class="img-box">
+                <img
+                  src="./image/11_f093b36c-8dc6-4a65-b57c-b1f4a2f9eee2_360x.png"
+                  alt="smartphone"
+                />
+              </div>
+              <div class="content">
+                <span><a href="#">TECHNOLOGY</a></span>
+                <h4>
+                  <a href="#">The Smartphone Has Just Launched in Sep 2022</a>
+                </h4>
+                <h6>Post by ALO Support</h6>
+                <p>
+                  iPad Pro is the fastest device of its kind. It’s designed to
+                  take full advantage...
+                </p>
+                <div class="brdr"></div>
+                <footer>
+                  <a href="#">READ MORE</a>
+                  <span>MAR, 03 2023</span>
+                </footer>
+              </div>
+            </div>
+            <div class="technology">
+              <div class="img-box">
+                <img
+                  src="./image/9_b58d4bd6-a8d0-4a96-85c7-48a054e291ae_360x.png"
+                  alt="smartphone"
+                />
+              </div>
+              <div class="content">
+                <span><a href="#">TECHNOLOGY</a></span>
+                <h4>
+                  <a href="#">The Smartphone Has Just Launched in Sep 2022</a>
+                </h4>
+                <h6>Post by ALO Support</h6>
+                <p>
+                  iPad Pro is the fastest device of its kind. It’s designed to
+                  take full advantage...
+                </p>
+                <div class="brdr"></div>
+                <footer>
+                  <a href="#">READ MORE</a>
+                  <span>MAR, 03 2023</span>
+                </footer>
+              </div>
+            </div>
+            <div class="technology">
+              <div class="img-box">
+                <img
+                  src="./image/8_075bf9d5-64f0-447a-a179-56e765c7cde9_360x.png"
+                  alt="smartphone"
+                />
+              </div>
+              <div class="content">
+                <span><a href="#">TECHNOLOGY</a></span>
+                <h4>
+                  <a href="#">The Smartphone Has Just Launched in Sep 2022</a>
+                </h4>
+                <h6>Post by ALO Support</h6>
+                <p>
+                  iPad Pro is the fastest device of its kind. It’s designed to
+                  take full advantage...
+                </p>
+                <div class="brdr"></div>
+                <footer>
+                  <a href="#">READ MORE</a>
+                  <span>MAR, 03 2023</span>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ^################ laber shiping section -->
+      <section class="laber-shiping">
+        <div class="container">
+          <div class="cards">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-gauge-simple"></i>
+              </div>
+              <div class="content">
+                <h4>FAST DELIVERY</h4>
+                <p>Across West & East India</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-id-card-clip"></i>
+              </div>
+              <div class="content">
+                <h4>SAFE PAYMENT</h4>
+                <p>100% Secure Payment</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+              <div class="content">
+                <h4>ONLINE DISCOUNT</h4>
+                <p>Add Multi-buy Discount</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="content">
+                <h4>HELP CENTER</h4>
+                <p>Dedicated 24/7 Support</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-file-export"></i>
+              </div>
+              <div class="content">
+                <h4>CURATED ITEMS</h4>
+                <p>From Handpicked Sellers</p>
+              </div>
+            </div>
+
+            <div class="brdr"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ^################ information section -->
+      <section class="information">
+        <div class="container">
+          <div class="item about-store">
+            <h3>ABOUT THE STORE</h3>
+            <h5>Got Question? Call us 24/7</h5>
+            <a href="#">+222-1800-262</a>
+            <p>268 St, South New York/NY 98944, United States</p>
+            <p>Customersupport@example.com</p>
+            <a href="" #>
+              <p>Aloshopify@alothemes.com</p>
+            </a>
+          </div>
+          <div class="item info">
+            <h3>INFOMATION</h3>
+            <p>
+              You have not selected the <br />
+              footer menu
+            </p>
+          </div>
+          <div class="item links">
+            <h3>QUICK LINKS</h3>
+            <p>
+              You have not selected the <br />
+              footer menu
+            </p>
+          </div>
+          <div class="item sign-up">
+            <h3>NEWSLETTER SIGNUP</h3>
+            <p>
+              Join 20.000+ subscribers and get a new discount coupon on every
+              Saturday. Updates information on Sales and Offers.
+            </p>
+            <form action="">
+              <input type="text" placeholder="your email address ...." />
+              <button>SUBSCRIBE</button>
+            </form>
+            <p>Subscribe for Uminex and get 20% off your first purchase.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ^################ footer -->
+      <footer>
+        <div class="container">
+          <div class="copy-right">
+            <p>
+              Copyright © <a href="#">Uminex</a> all rights reserved. Powered by
+              <a href="#">Alothemes</a>.
+            </p>
+          </div>
+          <div class="payment">
+            <span>Payment Method: </span>
+            <img src="./image/payment.png" alt="payment" />
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

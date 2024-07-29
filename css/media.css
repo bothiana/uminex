@@ -1,0 +1,316 @@
+@media (max-width: 576px) {
+  header .top-header .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .m-header .menu-icon {
+    display: block;
+  }
+
+  header .offer {
+    width: 100%;
+  }
+  header .header-offer {
+    display: none;
+  }
+
+  /* & descond */
+  .descond {
+    display: none;
+  }
+  /* & middel header */
+  .m-header .container {
+    width: 95%;
+    align-items: center;
+  }
+  .m-header .input,
+  .m-header li {
+    display: none;
+  }
+  .m-header li.shopping {
+    display: block;
+  }
+  .m-header {
+    border: none;
+  }
+  /* & navbar */
+  nav {
+    display: none;
+  }
+
+  div.another-input {
+    width: 95%;
+    height: 49px;
+    margin-top: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .another-input input {
+    margin-left: 0px;
+  }
+  /* & main section */
+  .main-section .container {
+    display: grid;
+    grid-template-areas:
+      "iphone iphone"
+      "ipad ipadgame";
+    padding-block: 30px;
+    gap: 5px;
+    row-gap: 0;
+  }
+  .main-section img {
+    width: 100%;
+  }
+
+  /* & electronic section */
+  .electronic {
+    padding-block: 18px;
+  }
+  .electronic .container {
+    display: flex;
+    width: 95%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    padding-left: 12px;
+    margin: auto;
+  }
+
+  .electronic .item {
+    width: 25%;
+  }
+  /* &product section */
+  section.product {
+    padding-block: 10px;
+  }
+
+  section.product .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 10px;
+  }
+  .products .image-box {
+    width: 100%;
+    margin-top: -5px;
+  }
+  section.product .title .left-side p {
+    display: flex;
+    align-items: center;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 8px;
+  }
+
+  .products .product {
+    background-color: white;
+    width: 33.333%;
+    height: 440px;
+  }
+  .products .content {
+    background-color: #fff;
+
+    transition: 0.5s top;
+    padding-inline: 10px;
+  }
+  .product .icons {
+    display: none;
+  }
+
+  .products .product button {
+    margin-right: 25px;
+  }
+
+  .products .phone-product .btn {
+    margin-top: 17px;
+  }
+  /* &feature product section */
+  .feature-product .product {
+    height: 395px;
+  }
+  /* &fixed image section */
+  .fixed-image {
+    padding-block: 0;
+  }
+  .fixed-image .image {
+    padding: 40px;
+  }
+  /* & phone types section */
+  .phone-types {
+    padding-block: 0;
+  }
+  .phone-types .card {
+    width: 100%;
+  }
+  .phone-types .card .image {
+    width: 50%;
+  }
+  /* & items section */
+  .item-section {
+    padding-block: 0;
+  }
+  .item-section .items {
+    flex-direction: column;
+  }
+  .item-section .item {
+    width: 100%;
+  }
+  /* & recommended product */
+
+  .recommended-product .product {
+    height: 405px;
+  }
+  /* & technology-section  */
+  .technology-section .technologies {
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 8px;
+  }
+  .technology-section .technology {
+    width: 33.333%;
+  }
+  /* &laber shiping section */
+  .laber-shiping .cards {
+    row-gap: 15px;
+  }
+  .laber-shiping .card {
+    width: 50%;
+  }
+  /* & information */
+  .information {
+    margin-block: 0;
+  }
+  .information .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .information .item {
+    width: 100%;
+  }
+  /* &footer */
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .payment span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header .top-header .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .m-header .menu-icon {
+    display: block;
+  }
+
+  header .offer {
+    width: 100%;
+  }
+  header .header-offer {
+    display: none;
+  }
+
+  /* & descond */
+  .descond {
+    display: none;
+  }
+  /* & middel header */
+  .m-header .container {
+    width: 95%;
+    align-items: center;
+  }
+  .m-header .input,
+  .m-header li {
+    display: none;
+  }
+  .m-header li.shopping {
+    display: block;
+  }
+  .m-header {
+    border: none;
+  }
+  /* & navbar */
+  nav {
+    display: none;
+  }
+
+  div.another-input {
+    width: 95%;
+    height: 49px;
+    margin-top: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .another-input input {
+    margin-left: 0px;
+  }
+  /* & main section */
+  .main-section .container {
+    display: grid;
+    grid-template-areas:
+      "iphone iphone"
+      "ipad ipadgame";
+    padding-block: 30px;
+    gap: 5px;
+    row-gap: 0;
+  }
+  .main-section img {
+    width: 100%;
+  }
+  /* & electronic section */
+  .electronic {
+    padding-block: 18px;
+  }
+  .electronic .container {
+    display: flex;
+    width: 95%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    padding-left: 12px;
+    margin: auto;
+  }
+
+  .electronic .item {
+    width: 25%;
+  }
+  /* &product section */
+  section.product .title {
+    padding-inline: 8px;
+  }
+  .products .image-box {
+    width: 100%;
+    margin-top: -5px;
+  }
+  .products .product {
+    background-color: white;
+    width: 33.333%;
+    height: 440px;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 8px;
+  }
+  .products .product button {
+    margin-right: 25px;
+  }
+
+  .products .phone-product .btn {
+    margin-top: 17px;
+  }
+
+}
