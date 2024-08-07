@@ -159,7 +159,6 @@ button:hover {
 
 input {
   border: none;
-  margin-left: 60px;
   margin-right: 170px;
   display: block;
 }
@@ -511,7 +510,7 @@ section.product {
   padding-inline: 5px;
   overflow: hidden;
   position: relative;
-  height: 380px;
+  height: 370px;
 }
 
 .products .product img {
@@ -569,7 +568,7 @@ section.product {
 .product h6 {
   font-size: 15px;
   color: var(--link);
-  margin-block: 8px;
+  /* margin-block: 8px; */
 }
 
 .product span {
@@ -1092,6 +1091,9 @@ section.recommended-product .product .icons {
 .information .info,
 .information .links {
   width: 20%;
+}
+.info-button{
+  position: relative;
 }
 
 .information .container div.item p {
